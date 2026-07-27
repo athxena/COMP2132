@@ -73,4 +73,23 @@ $("#roll").click(function () {
         }
     }
 });
+$("#reset").click(function () {
+    round = 0;
 
+    player.total = 0;
+    computer.total = 0;
+
+    $("#pscore").text(0);
+    $("#cscore").text(0);
+
+    $("#ptotal").text(0);
+    $("#ctotal").text(0);
+
+    $("#msg").text("");
+
+    $("#p1").attr("src", "images/die1.png");
+    $("#p2").attr("src", "images/die1.png");
+
+    $("#c1").attr("src", "images/die1.png");
+    $("#c2").attr("src", "images/die1.png");
+});
