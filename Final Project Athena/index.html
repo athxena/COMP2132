@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <title>ice Game</title>
+        <title>Dice Game</title>
 
         <link
             rel="stylesheet"
@@ -67,3 +67,33 @@
                     </p>
                 </div>
             </div>
+
+            <button id="roll">Roll Dice</button>
+
+            <button id="reset">New Game</button>
+
+            <button id="rules">Rules</button>
+
+            <h2 id="msg"></h2>
+        </div>
+        <div
+            id="Info"
+            class="popup">
+            <div class="popup-box">
+                <h2>How to Play</h2>
+
+                <p>Roll the dice three times against the computer.</p>
+
+                <p>If either die is a 1, your score is 0.</p>
+
+                <p>If both dice match, add them together and multiply by 2.</p>
+
+                <p>Any other roll is just the total of the two dice.</p>
+
+                <p>After three rounds, the highest score wins!</p>
+
+                <button id="okbutton">Got It!</button>
+            </div>
+        </div>
+    </body>
+</html>
