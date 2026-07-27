@@ -4,7 +4,7 @@ let player = {
     total: 0,
 };
 
-let computer = {
+let opponent = {
     total: 0,
 };
 
@@ -55,19 +55,19 @@ $("#roll").click(function () {
     let cs = score(c1, c2);
 
     player.total += ps;
-    computer.total += cs;
+    opponent.total += cs;
 
     $("#pscore").text(ps);
     $("#cscore").text(cs);
 
     $("#ptotal").text(player.total);
-    $("#ctotal").text(computer.total);
+    $("#ctotal").text(opponent.total);
 
     if (round == 3) {
-        if (player.total > computer.total) {
+        if (player.total > opponent.total) {
             $("#msg").text("You Win!");
-        } else if (computer.total > player.total) {
-            $("#msg").text("Computer Wins!");
+        } else if (opponent.total > player.total) {
+            $("#msg").text("Opponent Wins!");
         } else {
             $("#msg").text("It's a Tie!");
         }
@@ -78,7 +78,7 @@ $("#reset").click(function () {
     round = 0;
 
     player.total = 0;
-    computer.total = 0;
+    opponent.total = 0;
 
     $("#pscore").text(0);
     $("#cscore").text(0);
