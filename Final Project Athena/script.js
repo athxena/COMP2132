@@ -73,6 +73,7 @@ $("#roll").click(function () {
         }
     }
 });
+
 $("#reset").click(function () {
     round = 0;
 
@@ -92,4 +93,18 @@ $("#reset").click(function () {
 
     $("#c1").attr("src", "images/die1.png");
     $("#c2").attr("src", "images/die1.png");
+});
+
+$("#rules").click(function () {
+    $("#Info").css({
+        opacity: "1",
+        pointerEvents: "auto",
+    });
+});
+
+$("#okbutton").click(function () {
+    $("#Info").css({
+        opacity: "0",
+        pointerEvents: "none",
+    });
 });
