@@ -2,22 +2,68 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0" />
-        <title>Dice Game</title>
+        <title>ice Game</title>
 
         <link
             rel="stylesheet"
             href="style.css" />
-        <link
-            rel="javascript"
-            href="script.js" />
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script
+            src="script.js"
+            defer></script>
     </head>
 
     <body>
-        <div class="game-container">
-            <h1>Dice Game</h1>
-        </div>
-    </body>
-</html>
+        <div class="game">
+            <h1>Dice Game !</h1>
+
+            <p>Roll the dice three times and beat the computer!</p>
+
+            <div class="board">
+                <div class="player">
+                    <h2>You</h2>
+
+                    <img
+                        id="p1"
+                        src="images/die1.png"
+                        alt="die" />
+                    <img
+                        id="p2"
+                        src="images/die1.png"
+                        alt="die" />
+
+                    <p>
+                        Round Score:
+                        <span id="pscore">0</span>
+                    </p>
+
+                    <p>
+                        Total Score:
+                        <span id="ptotal">0</span>
+                    </p>
+                </div>
+
+                <div class="computer">
+                    <h2>Computer</h2>
+
+                    <img
+                        id="c1"
+                        src="images/die1.png"
+                        alt="die" />
+                    <img
+                        id="c2"
+                        src="images/die1.png"
+                        alt="die" />
+
+                    <p>
+                        Round Score:
+                        <span id="cscore">0</span>
+                    </p>
+
+                    <p>
+                        Total Score:
+                        <span id="ctotal">0</span>
+                    </p>
+                </div>
+            </div>
